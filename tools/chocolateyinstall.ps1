@@ -2,7 +2,7 @@
 
 $version = "3.02a07"
 $url = "https://svwh.dl.sourceforge.net/project/tumagcc/schily-cdrtools-$version.7z"
-$checksum = "BAD39F9B5CEF30013E8DEF5375397C3B891745BC4C69B30532908B3A89116121"
+$checksum = "CEF986C790F63B2D815E28502DEA1A75090B6F15F9B016F970B91AA2F60795C3"
 $fileName  = "schily-cdrtools-$version.7z"
 $toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 $zip_path = "$toolsPath\$fileName"
