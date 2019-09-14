@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   https://svwh.dl.sourceforge.net/project/tumagcc/schily-cdrtools-3.02a07.7z
+   https://svwh.dl.sourceforge.net/project/tumagcc/schily-cdrtools-3.02a09.7z
 
    which will download the 7z file.
 
@@ -15,7 +15,7 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum: CEF986C790F63B2D815E28502DEA1A75090B6F15F9B016F970B91AA2F60795C3
+   checksum: 0B83F199EBF72CC5A1B60BCB4AA915A420C33B8886B00496E21467E5845AA135
 
 Cdrtools is a set of 100% free true OpenSource programs that follow the definitions from OSI:
    http://cdrtools.sourceforge.net/private/cdr-faq.html

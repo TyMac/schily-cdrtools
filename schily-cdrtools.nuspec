@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>3.2.1</version>
+    <version>3.2.9-alpha</version>
     <!-- <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>-->
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <!--<owners>__REPLACE_YOUR_NAME__</owners>-->
@@ -47,7 +47,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
     <!--<mailingListUrl></mailingListUrl>-->
     <!--<bugTrackerUrl></bugTrackerUrl>-->
-    <tags>schily-cdrtools mkisofs</tags>
+    <tags>schily-cdrtools btcflash cdda2wav cdrecord devdump isodebug isodump isoinfo isovfy mkhybrid mkisofs readcd rscsi scgcheck scgskeleton</tags>
     <summary>A Tool Box with tools written or managed by Jörg Schilling.</summary>
     <description>The "Schily" Tool Box is a set of tools written or managed by Jörg Schilling. It includes programs like: cdrecord, cdda2wav, readcd, mkisofs, smake, bsh, btcflash, calc, calltree, change, compare, count, devdump, dmake based on SunPro Make, hdump, isodebug, isodump, isoinfo, isovfy, label, mt, obosh, od, p, POSIX patch, pbosh, sccs, scgcheck, scpio, sdd, sfind, sformat, smake, sh/bosh (Bourne sh), star, star_sym, strar, suntar, gnutar, tartest, termcap, and ved.</description>
     <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->

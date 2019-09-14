@@ -1,20 +1,23 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$version = "3.02a07"
+$version = "3.02a09"
 $url = "https://svwh.dl.sourceforge.net/project/tumagcc/schily-cdrtools-$version.7z"
-$checksum = "CEF986C790F63B2D815E28502DEA1A75090B6F15F9B016F970B91AA2F60795C3"
+$checksum = "0B83F199EBF72CC5A1B60BCB4AA915A420C33B8886B00496E21467E5845AA135"
+$checksumType = "sha256"
 $fileName  = "schily-cdrtools-$version.7z"
-$toolsPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
-$zip_path = "$toolsPath\$fileName"
-Remove-Item $toolsPath\* -Recurse -Force -Exclude $fileName
+$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$zip_path = "$toolsDir\$fileName"
+Remove-Item $toolsDir\* -Recurse -Force -Exclude $fileName
  
 $packageArgs = @{
     Url             = $url
     Checksum        = $checksum
-    ChecksumType    = 'sha256'
+    ChecksumType    = $checksumType
+    UnzipLocation   = $toolsDir
     PackageName     = 'schily-cdrtools'
     FileFullPath    = $zip_path
-    Destination     = $toolsPath
 }
-Get-ChocolateyUnzip @packageArgs
+
+Install-ChocolateyZipPackage @packageArgs
+
 Remove-Item $zip_path -ea 0
