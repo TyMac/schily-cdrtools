@@ -8,7 +8,7 @@ $fileName  = "schily-cdrtools-$version.7z"
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $zip_path = "$toolsDir\$fileName"
 Remove-Item $toolsDir\* -Recurse -Force -Exclude $fileName
- 
+
 $packageArgs = @{
     Url             = $url
     Checksum        = $checksum
